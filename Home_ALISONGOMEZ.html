@@ -16,15 +16,10 @@
         }
 
         h1 {
+            margin-top: 10px;
+            margin-bottom: 30px;
             color: #fb5607;
             font-size: 100px;
-        }
-
-        p {
-            max-width: 600px;
-            margin: auto;
-            color: #333;
-            font-size: 20px;
         }
 
         #extraText {
@@ -32,6 +27,9 @@
             margin-top: 20px;
             color: #333;
             font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+
         }
 
         button {
@@ -62,24 +60,22 @@
         img {
             display: none;
             position: fixed;
-            bottom: 100px;
-            left: 50%; 
-            transform: translateX(-50%);  
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
             width: 400px;
         }
-        
     </style>
 </head>
 
 <body>
     <div class="container"> <!-- Div: contenedor con cualquier de etiquetas -->
         <h1>Alison Gomez</h1>
-        <br>
         <button style="font-family: 'CoveredByYourGrace-Regular', cursive;" onclick="toggleText()">Presioname </button>
-        <br>
+        <br><br>
         <p id="extraText">Hola, soy Alison y tengo 21 años :) Me gusta dibujar, escuchar música y salir a correr, aunque
             mi hobbie actual es hacer hípica.</p>
-            <img id= "giftGatito" src="Photos/Gatito.gif" alt=" Gift Gatito">
+        <img id="giftGatito" src="Photos/Gatito.gif" alt=" Gift Gatito">
     </div>
     <!-- id permite modificar el contenido en css de una etiqueta especifica, como por ejemplo el color - style--->
 
@@ -100,6 +96,9 @@
             }
         }
     </script>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
