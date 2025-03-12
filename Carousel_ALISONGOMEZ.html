@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel_ALISONGOMEZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Fuentes_ALISONGOMEZ.css">
+    <style>
+        #carouselEspacio,
+        #carouselPaisajes {
+            width: 50%;
+            /* El carrusel ocupará todo el ancho disponible */
+            height: 80vh;
+            /* El carrusel ocupará el 80% de la altura de la ventana */
+            margin: auto;
+            /* Centra el carrusel dentro de su contenedor */
+        }
+
+        .carousel-inner {
+            width: 100%;
+            /* Asegura que el carrusel ocupe todo el ancho del contenedor */
+            height: 100%;
+            /* Hace que el contenedor del carrusel tenga el 100% de la altura asignada */
+        }
+        h1 {
+            color: #fb5607;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Fotos con Thor </h1>
+        <div id="carouselEspacio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Photos/ImagenCarrusel1.jpeg" class="d-block w-100" alt="Foto Thor 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos/ImagenCarrusel2.jpeg" class="d-block w-100" alt="Foto Thor 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos/ImagenCarrusel3.jpg" class="d-block w-100" alt="Foto Thor 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspacio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEspacio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <h1 class="text-center mt-5">Fotos solo de Thor </h1>
+        <div id="carouselPaisajes" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Photos/ImagenCarrusel4.jpeg" class="d-block w-100" alt="Foto Thor 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos/ImagenCarrusel5.jpeg" class="d-block w-100" alt="Foto Thor 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos/ImagenCarrusel6.jpg" class="d-block w-100" alt="Foto Thor 5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaisajes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPaisajes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

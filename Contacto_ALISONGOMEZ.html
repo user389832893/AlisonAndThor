@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <link rel="stylesheet" href="Fuentes_ALISONGOMEZ.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto_ALISONGOMEZ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #faedcd;
+            text-align: center;
+        }
+
+        label,
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 150%;
+            padding: 5px;
+            color: #FFAC5A;
+            font-family: 'CoveredByYourGrace-Regular', cursive;
+        }
+
+        input {
+            color: #333;
+            font-family: 'CoveredByYourGrace-Regular', cursive;
+            width: 100%;
+
+        }
+
+        input[type="file"] {
+            font-family: 'CoveredByYourGrace-Regular', cursive;
+            font-size: 18px;
+            color: #FFAC5A;
+            background-color: #faedcd;
+            border: 2px solid #FFAC5A;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+
+        button {
+            background-color: #ff6f1f;
+            color: white;
+            padding: 30PX;
+            border: none;
+            cursor: pointer;
+            font-size: 150%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            color: #fb5607;
+            font-size: 100px;
+        }
+
+        .file-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .file-container input[type="file"] {
+            width: auto;
+            padding: 5px;
+            font-size: 150%;
+            color: #FFAC5A;
+            font-family: inherit;
+        }
+
+        #missatge {
+            color: #333
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIO DE CONTACTO</h1>
+
+    <div style="margin: 2%;">
+        <form action="mailto:teuemail@example.com" method="post" enctype="multipart/form-data">
+            <label for="nom">Nombre y apellidos:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="assumpte">Asunto:</label>
+            <input type="text" id="assumpte" name="assumpte" required> <!-- necesita poner informacion del usuario -->
+
+            <label for="missatge">Cuerpo del mensaje:</label>
+            <textarea id="missatge" name="missatge" rows="7" required></textarea>
+
+            <br>
+            <br>
+
+
+            <label for="fitxer">Adjuntar documentos:</label>
+            <div class="file-container">
+                <input type="file" id="fitxer" name="fitxer"
+                    style="font-family: 'CoveredByYourGrace-Regular', cursive;">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <button style="font-family: 'CoveredByYourGrace-Regular', cursive;" onclick="toggleText()">ENVIAR</button>
+        </form>
+    </div>
+</body>
+
+</html>

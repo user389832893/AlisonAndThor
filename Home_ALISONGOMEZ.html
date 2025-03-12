@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="Fuentes_ALISONGOMEZ.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_ALISONGOMEZ</title>
+    <style>
+        body {
+
+            margin: 20px;
+            padding: 20px;
+            background-color: #faedcd;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fb5607;
+            font-size: 100px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: auto;
+            color: #333;
+            font-size: 20px;
+        }
+
+        #extraText {
+            display: none;
+            margin-top: 20px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #fb5607;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ff6f1f;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        img {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            left: 50%; 
+            transform: translateX(-50%);  
+            width: 400px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container"> <!-- Div: contenedor con cualquier de etiquetas -->
+        <h1>Alison Gomez</h1>
+        <br>
+        <button style="font-family: 'CoveredByYourGrace-Regular', cursive;" onclick="toggleText()">Presioname </button>
+        <br>
+        <p id="extraText">Hola, soy Alison y tengo 21 años :) Me gusta dibujar, escuchar música y salir a correr, aunque
+            mi hobbie actual es hacer hípica.</p>
+            <img id= "giftGatito" src="Photos/Gatito.gif" alt=" Gift Gatito">
+    </div>
+    <!-- id permite modificar el contenido en css de una etiqueta especifica, como por ejemplo el color - style--->
+
+
+    <script>
+        function toggleText() {
+            var extraText = document.getElementById("extraText");
+            var img = document.getElementById("giftGatito");
+            if (extraText.style.display === "none") {
+                extraText.style.display = "block";
+            } else {
+                extraText.style.display = "none";
+            }
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

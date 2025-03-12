@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'CoveredByYourGrace-Regular';
+    src: url('Fonts/CoveredByYourGrace-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+    body {
+    font-family: 'CoveredByYourGrace-Regular', cursive;
+    background-color: #faedcd;
+    }
+    
+    h1 {
+    text-transform: capitalize;
+    }
+    .carousel-inner img {
+        width: 100%;            /* El ancho de la imagen será 100% del contenedor */
+        height: 10%;           /* La altura será 60% de la ventana (ajustable según lo que desees) */
+        object-fit: cover;      /* Para que las imágenes se ajusten y cubran el área sin distorsionarse */
+        margin: auto;           /* Centra la imagen dentro del contenedor */
+        display: block;         /* Hace que las imágenes se comporten como bloques */
+    }
+    
+    
+    
+
+
+
